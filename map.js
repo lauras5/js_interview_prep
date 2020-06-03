@@ -46,3 +46,31 @@ let clone = new Map(myMap);
 
 console.log(clone.get(1));
 // =============================================
+let numArr = [5, 10, 15, 20, 25];
+
+let mappedArr = numArr.map(myFunc);
+
+// vs
+
+let loopArr = [];
+for (let i = 0; i < numArr.length; i++) {
+  loopArr.push(numArr[i] * 5);
+}
+
+function myFunc(num) {
+  return num * 5;
+}
+
+console.log(mappedArr);
+console.log(loopArr);
+
+let string = "Please make each word uppercase";
+let strArr = string.split(" ");
+// console.log(strArr);
+let newStr = strArr.map(uppercase).join(" ");
+
+function uppercase(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+console.log(newStr);
