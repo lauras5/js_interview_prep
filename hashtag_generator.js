@@ -5,10 +5,6 @@ function generateHashtag(str) {
 
   // must start w/ hashtag
   // first letter capitalized, index0 to upper
-  // let resultArr = str.split(" ");
-  // resultArr.forEach((word) => {
-  //   result += word.charAt(0).toUpperCase() + word.slice(1);
-  // });
 
   result += str.split(" ").map(capitalize).join("");
 
@@ -19,4 +15,5 @@ function generateHashtag(str) {
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
 console.log(generateHashtag("Do we have A hashtag"));

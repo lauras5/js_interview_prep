@@ -40,3 +40,13 @@ myMap.forEach(logElements);
 function logElements(value, key, map) {
   console.log(`m[${key}] = ${value}`);
 }
+
+if (dictionary.hasOwnProperty("one")) {
+  console.log("has property");
+}
+
+if (myMap.has(keyString)) {
+  console.log("has property");
+} else {
+  console.log("does not contain property.");
+}
