@@ -34,8 +34,3 @@ console.log(
 let fruits = ["apple", "orange", "banana", "grape", "cherry"];
 console.log(fruits.sort());
 console.log(fruits.reverse());
-
-let word = "simpsons";
-
-let wordArr = word.split("").reverse().join("");
-console.log(`simpsons reversed => ${wordArr}`);
