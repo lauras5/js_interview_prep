@@ -18,6 +18,21 @@ function twoSum(nums, target) {
   return result;
 }
 
+var twoSum2 = function (nums, target) {
+  const map = new Map();
+  // look speed in map is O(1) faster but takes more memory than conventional solution
+  for (let i = 0; i < nums.length; i++) {
+    let curVal = nums[i];
+
+    if (map.has(curVal)) {
+      return [map.get(curVal), i];
+    }
+
+    let diff = target - curVal;
+    map.set(diff, i);
+  }
+};
+
 console.log(twoSum(numArr, 5)); // output [2, 3]
 
 // hash/obj solution O(n)
