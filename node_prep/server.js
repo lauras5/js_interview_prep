@@ -5,11 +5,9 @@ const bodyParser = require("body-parser");
 const db = require(".config/db");
 // instance of express fw
 const app = express();
-
 const port = 8000;
 
 app.use(bodyParser.urlencoded({ extended: true })); // process encoded
-
 
 MongoClient.connect(db.url, (err, database) => {
   if (err) return console.log(err);
