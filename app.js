@@ -1,16 +1,5 @@
 const fs = require("fs");
 
-// delete functionality
-// syncronous
-// try {
-//   fs.unlinkSync("./toBeDeleted.txt");
-// } catch (err) {
-//   console.error(err);
-// } finally {
-//   console.log("done sync delete");
-// }
-// goes in order and stops at spot
-
 // asyncronouss
 // callback function
 fs.unlink("./toBeDeleted.txt", (err) => {
@@ -21,20 +10,6 @@ fs.unlink("./toBeDeleted.txt", (err) => {
   }
 });
 console.log("do next step after delete");
-
-// read file functionality
-// syncronously
-// async
-// fs.readFile("./read.txt", "utf8", (err, data) => {
-//   // this is some text
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log(data);
-//   }
-// });
-
-// convert to readable data
 
 // runs whatever it can run
 // then shows errors
@@ -64,9 +39,3 @@ fs.readFile("./Demo.txt", "utf8", (err, data) => {
     console.log(data);
   }
 });
-
-// let contents = fs.readFileSync("./Another.txt", {
-//   encoding: "utf8",
-//   flag: "r",
-// });
-// console.log(contents);
