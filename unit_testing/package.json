@@ -1,0 +1,14 @@
+{
+  "name": "unit_testing",
+  "version": "1.0.0",
+  "description": "unit testing with jest",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.2.2"
+  }
+}
